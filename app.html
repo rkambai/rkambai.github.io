@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bigbundas</title>
+    <link rel="stylesheet" href = "style.css" />
+    <script src="https://kit.fontawesome.com/2b966e9bc0.js" crossorigin="anonymous"></script>
+</head>
+
+<div class="greet">
+  <h1 class="header1">Hey there,</h1>
+</div>
+<body>
+    <main>
+        <div class="talking">
+            <section class="intro_msg" id="whoi">
+                <h2>who are you?</h2>
+                <p> I'm Rainer, a university student born, raised and based in Singapore. I've always had an interest in 
+                    the wonders of technology and the possibilities it holds. It still tickles me to think about how most
+                    inventions we deem normal now would have boggled minds and popped eyes just decades ago, and how 
+                    my current direction is (hopefully) leading me to do the same. A man can dream, can't he?
+                </p>
+            </section>
+            <section id="whatdo">
+                <h2 class="info"> what do you do? </h2>
+                <p>Well... I study. I'm pursuing a degree in Data Science and Artificial Intelligence at 
+                    <a class = "ntu_link" href="https://www.ntu.edu.sg/">Nanyang Technological University</a> 
+                    which involves a lot of math and Python, among other things. I have experience working with 
+                    data science/visualisation tools such as pandas, matplotlib, and seaborn as well as various
+                    machine learning tools like SKLearn, XGBoost, and TensorFlow 2. I've also done a little SparkAR
+                    instagram filter creation as part of a school commission. I train with the
+                    school rugby team, and I voluntarily feed the campus cats &#128049. Here's a picture 
+                    of my friend and I from our faculty's instagram page:
+                </p>
+                <img src="dsai.jpg">
+            </section>
+            <section id="whatwant">
+                <h2 class="info"> what are your goals? </h2>
+                <p>Great question. I'd like to divide this into short-term and long-term goals. 
+                    In the short-term, I'd be delighted to expand my horizons and gain professional experience via
+                    internships related to my field. These include AI/ML project opportunites, data science, software engineering etc. 
+                    If you're a hirer and want to contact me, please do so via the "Contact Me" link within the sidebar. Maybe I'll
+                    rephrase that; all hirers should, without a doubt, absolutely 100% contact me, no questions asked.
+                </p>
+                <p>
+                    In the long-term, well, I've always wanted to do good in the world. Sounds like a load of cheese I know,
+                    but I ain't cheesin. I've always believed in preserving the environment and believe that AI can have a profound
+                    impact on sustainabile technology. An example would be this small project my friends and I worked on, called the 
+                    Massive Automated Recyclable Classifier (name credits to yours truly) that can be found in my 
+                    <a class = "git_link" href="https://github.com/rkambai"> github</a>.  
+                    Baby steps, I know - but we all start somewhere, right? Watch this demo video for said project:
+                </p>
+                <iframe src="https://youtube.com/embed/Yhq7OZPlP7Y" type="video/mp4"></iframe>
+                
+            </section>
+
+            <section id="personal">
+                <h2 class="info"> ...anything actually interesting? </h2>
+                <p>
+                    OUCH buddy... but yeah, I guess it really has just been me rambling on about typical student/career stuff hasn't it?
+                    I guess I should feel lucky you even bothered reading to this point. You're the best &#128525. 
+                    I really enjoy exercise and sports! Rugby's my fav, been playing since I was 13. I also regularly go to the gym.
+                    I love animals too, getting a pet (or pets) is definitely on my bucket list. I'd say dogs over cats, but only
+                    just barely, so don't go getting the pitchforks just yet.
+                </p>
+                <p> 
+                    Oh, and I like listening to music! I don't discriminate against genres, but I do have my go-to playlists. I also dabble
+                    in guitar, although I'm not very good at it &#128542. Still, it's fun learning and attempting to play pieces that I like.
+                    If you have any song recommendations, give me a hoot! Lastly, I'd really like to travel more, I wish I could simply jump on a plane 
+                    and scoot around the globe but unfortunately that's illegal. Here are some pictures from the last time I was overseas:
+                </p>
+                <div class="container">
+                    <div class="mySlides">
+                      <div class="numbertext">1 / 5</div>
+                        <img src="sun.jpg">
+                    </div>
+                  
+                    <div class="mySlides">
+                      <div class="numbertext">2 / 5</div>
+                        <img src="us.jpg">
+                    </div>
+                  
+                    <div class="mySlides">
+                      <div class="numbertext">3 / 5</div>
+                        <img src="dog.jpg">
+                    </div>
+                  
+                    <div class="mySlides">
+                      <div class="numbertext">4 / 5</div>
+                        <img src="ustower.jpg">
+                    </div>
+                  
+                    <div class="mySlides">
+                      <div class="numbertext">5 / 5</div>
+                        <img src="ussea.jpg">
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    
+                    <div class="caption-container">
+                      <p id="caption"></p>
+                    </div>
+                  
+                    <div class="row">
+                      <div class="column">
+                        <img class="demo cursor" src="sun.jpg" onclick="currentSlide(1)" alt="Sunrise @ Mt. Batur">
+                      </div>
+                      <div class="column">
+                        <img class="demo cursor" src="us.jpg" onclick="currentSlide(2)" alt="We climbed a mountain!">
+                      </div>
+                      <div class="column">
+                        <img class="demo cursor" src="dog.jpg" onclick="currentSlide(3)" alt="Stray dog there :D">
+                      </div>
+                      <div class="column">
+                        <img class="demo cursor" src="ustower.jpg" onclick="currentSlide(4)" alt="Doesn't this look cool?">
+                      </div>
+                      <div class="column">
+                        <img class="demo cursor" src="ussea.jpg" onclick="currentSlide(5)" alt="And of course, the beach">
+                      </div>
+                    </div>
+                  </div>
+            </section>
+
+            <section id="contact_me">
+                <h2>here are my socials, let's get in touch!</h2>
+                <p> School email: rkam002@ntu.edu.sg</p>
+                <p> Personal email: rainerkamiw@gmail.com</p>
+                <p> Others:</p>
+                <a href="https://github.com/rkambai"><button class="btn"><i class="fab fa-github"></i> Github</button></a>
+                <a href="https://www.instagram.com/rainerkampongglam/"><button class="btn"><i class="fab fa-instagram"></i> Instagram</button></a>
+                <a href="https://www.linkedin.com/in/rainer-kam-46a79a203/"><button class="btn"><i class="fab fa-linkedin"></i> Linkedin</button></a>
+            </section>
+        </div>
+
+        <nav class="section-nav">
+            <ol>
+                <li><a href="#whoi">Who am I</a></li>
+                <li><a href="#whatdo"> What do I do</a></li>
+                <li><a href=#whatwant> What do I want</a></li>
+                <li><a href=#personal> I'm not boring I swear</a></li>
+                <li><a href=#contact_me> Contact Me</a></li>
+            </ol>
+        </nav>
+    </main>
+   
+</body>
+</html>
+
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("demo");
+    var captionText = document.getElementById("caption");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>

@@ -1,0 +1,225 @@
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* navigation bar*/
+main > nav {
+	position: sticky;
+	top: 2rem;
+	align-self: start;
+}
+
+.section-nav {
+    margin-top: 2rem;
+    padding-right: 1rem;
+    border-right: 1px solid #efefef;
+    margin-right: 3rem;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+}
+
+.talking{
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+  
+.section-nav a {
+    text-decoration: none;
+    display: block;
+    padding: 0 .125rem;
+    color: #ccc;
+    transition: all 50ms ease-in-out;
+}
+
+.section-nav a:hover,
+.section-nav a:focus {
+  color: #666;
+}
+/*end*/
+
+.ntu_link,
+.git_link {
+    color: #C58A84;
+    background-color: transparent;
+    text-decoration: none;
+    text-decoration: underline;
+}
+.ntu_link:hover,
+.git_link:hover {
+    color: #ABD3D7;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+
+body{
+    background-color:#3c3d52;
+    box-sizing:border-box;
+}
+
+p{
+    line-height: 160%;
+    font-family: 'Lucida Sans Typewriter';
+    font-size: 16px;
+}
+
+main{
+    font-size: 20px;
+    color:#fff;
+    text-align: left;
+    display: grid;
+    grid-template-columns: 15em 1fr;
+    max-width: 100em;
+    width: 90%;
+    margin:auto 0;
+}
+
+ul, ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    padding-bottom: 2rem;
+    margin-left: 1rem;
+}
+
+section {
+    margin-bottom: 14rem;
+}
+
+.greet{
+    display: flex;
+    background-image: url("cover.jpg");
+    background-repeat:repeat-x;
+    background-size: contain;
+    background-position: center;
+    background-color: transparent;
+    background-attachment: fixed;
+
+    height:600px;
+    color: #fff;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    font-size: 48px;
+    justify-content: center;
+    align-items: center;  
+
+}
+
+
+.btn {
+    background-color: #C58A84; 
+    border: none; /* Remove borders */
+    color: white; /* White text */
+    padding: 12px 20px; /* Some padding */
+    margin-right: 1rem;
+    font-size: 16px; /* Set a font size */
+    cursor: pointer; /* Mouse pointer on hover */
+}
+  
+  /* Darker background on mouse-over */
+.btn:hover {
+    background-color: #ABD3D7;
+    color: #000; 
+}
+
+
+/*slideshow*/
+.container {
+position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 25%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 30px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Six columns side by side */
+.column {
+    float: left;
+    width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+img,
+iframe{
+    object-fit:contain;
+    width:100%;
+    height:400px;
+}
