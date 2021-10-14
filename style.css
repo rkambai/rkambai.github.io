@@ -66,8 +66,8 @@ body{
 
 p{
     line-height: 160%;
-    font-family: 'Lucida Sans Typewriter';
-    font-size: 16px;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;;
+    font-size: 20px;
 }
 
 main{
