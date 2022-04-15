@@ -45,9 +45,11 @@ main > nav {
 /*end*/
 
 .ntu_link,
-.git_link {
+.git_link,
+.paymelah_link {
     color: #C58A84;
     background-color: transparent;
+    font-weight: bold;
     text-decoration: none;
     text-decoration: underline;
 }
