@@ -203,6 +203,10 @@ cursor: pointer;
     clear: both;
 }
 
+.row {
+    display: None;
+}
+
 /* Six columns side by side */
 .column {
     float: left;
